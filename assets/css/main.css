@@ -1,0 +1,42 @@
+/* 1. css for header */
+/* navbar  */
+.navbar__link.navbar__link--bold{
+    font-weight: 500;
+}
+
+.navbar-wrapper{
+    background-color: #333e48;
+}
+
+.navbar{
+    height: 3.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li{
+    display: inline-block;
+    color: var(--white-color);
+    padding: 0 7px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.navbar a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+/* search section */
+.header-search{
+    height: 9.5rem;
+}
+
+.header-search__logo img{
+    width: 60px;
+}
