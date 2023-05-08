@@ -7,11 +7,10 @@
 }
 
 *{
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 i{
-    font-size: 1.8rem !important;
     padding-right: 2px;
 }
 
@@ -21,6 +20,10 @@ html{
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+
+.show{
+    display: block !important;
 }
 
 .grid{

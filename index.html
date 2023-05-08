@@ -22,17 +22,33 @@
                 <div class="grid">
                     <nav class="navbar">
                         <ul class="navbar__list">
-                            <li class="navbar__item--app">Tải ứng dụng Mỹ Phẩm Ohui - LG Vina</li>
+                            <li class="navbar__item--app" onmouseover="showQR()" onmouseout="hideQR()">
+                                Tải ứng dụng Mỹ Phẩm Ohui - LG Vina
+                                <div class="navbar__qr">
+                                    <img src="https://cdn.abphotos.link/photos/qrcode_base64/aHR0cDovL3NoYXJlLmFicGhvdG9zLmxpbmsvRGxC"
+                                        alt="" class="qr-code">
+                                    <div class="store-link">
+                                        <a href="#">
+                                            <img src="./assets/images/ch-play-store.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/images/apple-store.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="navbar__item--phone">
                                 <a href="tel:0123456789" class="navbar__link">
                                     <!-- icon dien thoai -->
-                                    0123456789
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>0123456789</span>
                                 </a>
                             </li>
                             <li class="navbar__item--mail">
                                 <a href="mailto:abc@gmail.com" class="navbar__link">
                                     <!-- icon mail -->
-                                    abc@gmail.com
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <span>abc@gmail.com</span>
                                 </a>
                             </li>
                         </ul>
@@ -43,10 +59,12 @@
                             </li>
                             <li class="navbar__item--news">
                                 <!-- icon here -->
+                                <i class="fa fa-bell-o" aria-hidden="true"></i>
                                 <a href="" class="navbar__link navbar__link--bold">Tin tức</a>
                             </li>
                             <li class="navbar__item--contact">
                                 <!-- icon here -->
+                                <i class="fa fa-question-circle-o" aria-hidden="true"></i>
                                 <a href="" class="navbar__link navbar__link--bold">Liên hệ</a>
                             </li>
                             <li class="navbar__item--signup">
@@ -70,20 +88,611 @@
                         <div class="search-bar">
                             <input type="text" class="search-bar__search-box">
                             <div class="select-box"></div>
-                            <div class="search-bar__search-icon"></div>
+                            <div class="search-bar__search-icon">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="header-search__cart">
-
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
         </header>
 
         <div class="container">
-            <div class="banner"></div>
-            <div class="product"></div>
-            <div class="news"></div>
+            <div class="grid">
+                <div class="banner"></div>
+                <div class="product-section">
+                    <div class="product--sunscreen">
+                        <div class="product__heading">
+                            KEM CHỐNG NẮNG
+                        </div>
+                        <div class="product__list">
+                            <div class="head-product">
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/sunscreen/0.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Set kem chống nắng Ohui Day Shield Ultra
+                                                Sunblock UV Force SPF 50+/PA++++</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="list-product">
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/sunscreen/1.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Set kem chống nắng Ohui Day Shield Ultra
+                                                Sunblock UV Force SPF 50+/PA++++</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/sunscreen/2.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Set kem chống nắng Ohui Day Shield Ultra
+                                                Sunblock UV Force SPF 50+/PA++++</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/sunscreen/3.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Set kem chống nắng Ohui Day Shield Ultra
+                                                Sunblock UV Force SPF 50+/PA++++</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/sunscreen/3.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Set kem chống nắng Ohui Day Shield Ultra
+                                                Sunblock UV Force SPF 50+/PA++++</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/sunscreen/2.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Set kem chống nắng Ohui Day Shield Ultra
+                                                Sunblock UV Force SPF 50+/PA++++</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/sunscreen/1.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Set kem chống nắng Ohui Day Shield Ultra
+                                                Sunblock UV Force SPF 50+/PA++++</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product--cushion">
+                        <div class="product__heading">
+                            PHẤN NƯỚC - CUSHION
+                        </div>
+                        <div class="product__list">
+                            <div class="head-product">
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cushion/0.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Phấn nước dành cho da dầu Ohui Ultimate
+                                                Cover Lifting Cushion SPF50+/PA+++</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="list-product">
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cushion/1.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Phấn nước Ohui Ultimate Cover Lifting
+                                                Cushion</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cushion/2.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Bộ Phấn nước dưỡng trắng Whoo GJH Seol
+                                                Radiant Moisture Cushion Foundation</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cushion/1.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Phấn nước dành cho da nhờn Su:m37 Air
+                                                Rising TF Glow Cover Metal Cushion SPF50+/PA+++</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cushion/2.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Phấn nước dành cho da khô Su:m37 Air
+                                                Rising TF Dazzing Moist Micro Foam Cushion SPF50+/PA+++</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cushion/1.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Phấn nước trang điểm dưỡng trắng, chống
+                                                nắng Mi Luxury Golden Cushion SPF50+/PA+++</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cushion/2.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Phấn Nước dưỡng Sáng Whoo Radiant White
+                                                Moisture Cushion Foundation SPF50/PA+++ </span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product--cleanser">
+                        <div class="product__heading">
+                            LÀM SẠCH
+                        </div>
+                        <div class="product__list">
+                            <div class="head-product">
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cleanser/0.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Set sữa rửa mặt Water full amino cleansing
+                                                foam</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="list-product">
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cleanser/1.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Sữa rửa mặt cấp ẩm Whoo hồng Soo Hydrating
+                                                Foam Cleanser</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cleanser/2.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Nước tẩy trang Su:m37 Skin Saver Essential
+                                                Pure</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cleanser/3.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Sữa rửa mặt dưỡng trắng Su:m37 Bright
+                                                Award Micro Whipping Deep Cleansing Foam</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cleanser/2.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Sữa rửa mặt tái sinh Sum37 Losec Summa
+                                                Elixir Foam Cleanser chứa vàng</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cleanser/3.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Dầu tẩy trang dạng gel Su:m37 Skin Saver
+                                                Clear Cleaning Oil</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product">
+                                    <a href="">
+                                        <div class="product__pic">
+                                            <img src="./assets/images/cleanser/1.png" alt="">
+                                            <div class="product__sale">
+
+                                            </div>
+                                            <div class="product__cart">
+
+                                            </div>
+                                        </div>
+                                        <div class="product__info">
+                                            <span class="product__info--name">Mặt nạ thải độc Su:m37 Bright Award Bubble
+                                                De Mask Pack</span>
+                                            <div class="product__info--price">
+                                                <span class="price">1.100.000đ</span>
+                                                <span class="sale-price">990.000đ</span>
+                                            </div>
+                                            <div class="product__info--rate">
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news__heading">
+                        <a href="">TIN TỨC</a>
+                        <div class="news__slider-btn">
+                            <div class="news__slider-btn--left">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="news__slider-btn--right">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__news-container">
+                        <div class="news__all-news">
+                            <a href="#" class="a-news">
+                                <div class="a-news--container">
+                                    <img class="a-news__pic" src="./assets/images/news/1.png" alt="">
+                                    <div class="a-news__title">Kem trắng da OHUI có tốt không? Review kem dưỡng trắng
+                                        da OHUI Extreme White chi tiết</div>
+                                </div>
+                            </a>
+                            <a href="#" class="a-news">
+                                <div class="a-news--container">
+                                    <img class="a-news__pic" src="./assets/images/news/2.png" alt="">
+                                    <span class="a-news__title">Review kem chống nắng OHUI cho da dầu – OHUI Day Shield
+                                        Perfect Sun Black</span>
+                                </div>
+                            </a>
+                            <a href="#" class="a-news">
+                                <div class="a-news--container">
+                                    <img class="a-news__pic" src="./assets/images/news/3.png" alt="">
+                                    <span class="a-news__title">COVIT 19 đã thay đổi thói quen make up như thế
+                                        nào</span>
+                                </div>
+                            </a>
+                            <a href="#" class="a-news">
+                                <div class="a-news--container">
+                                    <img class="a-news__pic" src="./assets/images/news/4.png" alt="">
+                                    <span class="a-news__title">Khi cushion cũng có thể khiến bạn hạnh phúc !</span>
+                                </div>
+                            </a>
+                            <a href="#" class="a-news">
+                                <div class="a-news--container">
+                                    <img class="a-news__pic" src="./assets/images/news/5.png" alt="">
+                                    <span class="a-news__title">Bí mật của O HUI - Không chỉ ở công nghệ!</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="footer">
@@ -138,7 +747,8 @@
                                 <li class="menu__item">
                                     <div class="menu__item--link menu__item--store-link">
                                         <!-- ảnh mã QR -->
-                                        <img src="https://cdn.abphotos.link/photos/qrcode_base64/aHR0cDovL3NoYXJlLmFicGhvdG9zLmxpbmsvRGxC" alt="" class="qr-code">
+                                        <img src="https://cdn.abphotos.link/photos/qrcode_base64/aHR0cDovL3NoYXJlLmFicGhvdG9zLmxpbmsvRGxC"
+                                            alt="" class="qr-code">
                                         <div class="store-link">
                                             <!-- ảnh apple store -->
                                             <a href="#">
@@ -179,5 +789,7 @@
         </footer>
     </div>
 </body>
+
+<script src="./assets/js/script.js"></script>
 
 </html>
